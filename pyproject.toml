@@ -7,9 +7,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name =  "netbox-napalm-plugin"
-version = "0.3.4"
+version = "4.6.0"
 authors = [
-    {name = "Arthur Hanson", email = "ahanson@netboxlabs.com"},
+    {name = "Jordan Keith", email = "jordan@itctsv.com"},
 ]
 description = "NetBox plugin for Napalm."
 readme = "README.md"
@@ -22,11 +22,12 @@ classifiers=[
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
 ]
 
 requires-python = ">=3.10.0"
 dependencies = [
-    'napalm<5.0'
+    'napalm<6.0'
 ]
 
 [project.optional-dependencies]
@@ -46,7 +47,7 @@ Tracker = "https://github.com/netbox-community/netbox-napalm-plugin/issues"
 
 [tool.black]
 line-length = 120
-target_version = ['py310', 'py311', 'py312']
+target_version = ['py310', 'py311', 'py312', 'py313']
 
 [tool.setuptools.package-data]
 netbox_napalm_plugin = ["templates/**"]
